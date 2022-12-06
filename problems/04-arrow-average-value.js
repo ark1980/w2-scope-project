@@ -11,6 +11,12 @@ arrowAvgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
 
 // Your code here
+const arrowAvgValue = (nums) => {
+  const res = nums.reduce((cur, prev) => (
+    cur + prev
+  ), 0);
+  return res / nums.length
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

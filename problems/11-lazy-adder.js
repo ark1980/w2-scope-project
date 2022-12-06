@@ -23,6 +23,14 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // Your code here
+const lazyAdder = (firstNum) => {
+  const add = (secondNum) => {
+    return (thirdNum) => {
+      return firstNum + secondNum + thirdNum
+    }
+  }
+  return add;
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
